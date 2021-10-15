@@ -26,13 +26,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+With `.map` it is a group of data and all of the elements are kept in a key value pair. 
+It makes an array and it calls a particular function on all of the elements given in the parent array. 
+We usually use this to map each element of an array to another array of values and to concatenate those sub arrays into one large ending array. 
+
+`.reduce` will give us back a single value. We use it when we want to reduce the array to one single value to run a function. 
+We run this from left to right. One thing to also remember about .reduce is the face that it does not alter our original array. 
+
+Example: 
+
+The `.filter` method is used to create a new array that contains a subset of elements of the original array. This returns a true or false for each item.
+`.filter` method takes in a callback function as a parameter which is used to test each element of the array. This method is really helpful because we do
+ not have to bother ourselves about the old array being changed when using it subsequently. 
+ 
+
+
 2. Explain the difference between a callback and a higher order function.
+ A callback function is a function that we use to pass into another function as an argument and it brings back the outer function to complete a routine or action. 
+ A higher order function gets another function as an argument and brings it back as a function to its self.
+
 
 3. Explain what a closure is.
+ A closure is gives a function access to an outer functions scope even if the iner function is invoked from a different context. 
 
 4. Describe the four principles of the 'this' keyword.
+The four principles of the 'this' keyword are window global object binding, Implicit binding, new binding and explicit binding. 
+ Window global object binding Any global variable will be available as a property of the window object. 
+ Implicit Binding gives a function in a object using don notation
+ New binding will create us a new object. 
+ Explicit binding will pass in a object as the first parameter during a function call.
+
 
 5. Why do we need super() in an extended class?
+We need this because withought it we will not be able to call its parent constructor. The super() class is used to call a function on an objects parent. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
